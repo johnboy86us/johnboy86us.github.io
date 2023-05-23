@@ -1,0 +1,43 @@
+/* Element Selectors */
+h1 {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid black;
+    width: 75%;
+}
+
+table thead td {
+    border-bottom: 1px solid black;
+}
+
+table tbody {
+    counter-reset: row-num;
+}
+
+table tbody tr {
+    counter-increment: row-num;
+}
+
+table tbody tr td:first-child::before {
+    content: counter(row-num) ". ";
+}
+
+/* ID Selectors */
+
+
+/* Class Selectors */
+.center {
+    margin: 0 auto;
+}
